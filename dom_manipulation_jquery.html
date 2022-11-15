@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        img{
+           
+            height: 100vh;
+            background-size: cover;
+        }
+        .dom1{
+            font-size: 25px;
+           
+            color:white;
+        }
+        .dom2{
+            background-image: linear-gradient(blue,black);
+            
+        }
+            </style>
+</head>
+<body>
+    <label>enter something</label>
+    <input type="text" id="all" >
+    <button onclick="show()">click</button>
+
+
+    <p class="para">this is para</p>
+    <img src="img3.jpg" width="50%">
+
+
+  
+
+
+    <a href="https://www.youtube.com/">click on me</a>
+    <div class="dom2">i am division tag </div>
+    
+    
+    <script>
+       $("p").text("changed para!");
+       $(".para").css({"background-color":"crimson","color":"white","font-size":"40px"});
+       $("img").attr("src","p1.jpg");
+       $("a").attr("href","https://www.netflix.com/in/");
+       $("p").append("<h1>i am heading tag</h1>");
+       $("h1").addClass("dom1 dom2");
+       $("div").removeClass("dom2");
+       $("img").removeAttr("width");
+
+       function show(){
+
+       
+       var x=$("#all").val();
+       console.log(x);
+       
+       }
+
+
+    </script>
+
+    
+    
+</body>
+</html>
